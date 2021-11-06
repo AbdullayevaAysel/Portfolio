@@ -31,3 +31,15 @@ let links = document.querySelectorAll("a").forEach(links => {
         cursor2.classList.remove('active');
     }
 })
+
+function sendMail(params) {
+    var tempParams = {
+        from_name: document.getElementById("fromName").value,
+        to_name: document.getElementById("toName").value,
+        message: document.getElementById("msg").value,
+    };
+    emailjs.send('service_3g6692o','template_pvgqm19', tempParams)
+    .then(function(response) {
+        console.log("success",response.status)
+    })
+}

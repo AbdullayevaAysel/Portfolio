@@ -175,7 +175,7 @@
             </div>
             <div class="box">
                 <img class="zoom" src="images/img-2.png" alt="">
-                <h3> project 01</h3>
+                <h3> project 02</h3>
                 <div class="icons">
                     <a href="project/Food_restaurant.zip" class="fas fa-link" download></a>
                     <a href="https://food-restaurant-page.netlify.app" target="_blank" class="fas fa-share"></a>
@@ -183,7 +183,7 @@
             </div>
             <div class="box">
                 <img class="zoom" src="images/img-3.png" alt="">
-                <h3> project 01</h3>
+                <h3> project 03</h3>
                 <div class="icons">
                     <a href="project/Hava-Durumu.zip" class="fas fa-link" download></a>
                     <a href="https://hava-durumu-one-page.netlify.app" target="_blank" class="fas fa-share"></a>
@@ -191,7 +191,7 @@
             </div>
             <div class="box">
                 <img class="zoom" src="images/img-1.png" alt="">
-                <h3> project 01</h3>
+                <h3> project 04</h3>
                 <div class="icons">
                     <a href="project/Form Validation.zip" class="fas fa-link" download></a>
                     <a href="https://form-handle-validation.netlify.app" target="_blank" class="fas fa-share"></a>
@@ -226,12 +226,11 @@
 
         <div class="row">
             <form>
-                <input type="text" placeholder="name" class="box">
-                <input type="email" placeholder="email" class="box">
-                <input type="number" placeholder="number" class="box">
+                <input type="text" id="toName" placeholder="name" class="box">
+                <input type="email" id="fromName" placeholder="email" class="box">
 
-                <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
-                <input type="submit" class="btn" value="Send message" />
+                <textarea name="" placeholder="message" id="msg" cols="30" rows="10"></textarea>
+                <button onclick="sendMail()" class="btn">Send Message</button>
             </form>
 
             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.735441818273!2d50.03108901539934!3d40.52533827935264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDMxJzMxLjIiTiA1MMKwMDEnNTkuOCJF!5e0!3m2!1sen!2s!4v1635870428780!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
@@ -248,5 +247,12 @@
     <!-- custom js file link -->
     <script type="text/javascript" src="js/script.js"></script>
 
+    <!-- email js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+        emailjs.init("user_HOBA7PTVSbQW5wwGxNy3S");
+    })();
+    </script>
 </body>
 </html>
